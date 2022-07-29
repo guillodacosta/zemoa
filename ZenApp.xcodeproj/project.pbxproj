@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D090A66288C7A9F00C2B94E /* RootViewAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D090A65288C7A9F00C2B94E /* RootViewAppearance.swift */; };
+		8D090A69288C7CB800C2B94E /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D090A68288C7CB800C2B94E /* AppEnvironment.swift */; };
+		8D090A6B288C7CFD00C2B94E /* SystemsEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D090A6A288C7CFD00C2B94E /* SystemsEventHandler.swift */; };
+		8D0D7DE12884D6DC00CE02C4 /* ZenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7DE02884D6DC00CE02C4 /* ZenApp.swift */; };
+		8D0D7DE32884D6DC00CE02C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7DE22884D6DC00CE02C4 /* ContentView.swift */; };
+		8D0D7DE52884D6DE00CE02C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0D7DE42884D6DE00CE02C4 /* Assets.xcassets */; };
+		8D0D7DE82884D6DE00CE02C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0D7DE72884D6DE00CE02C4 /* Preview Assets.xcassets */; };
+		8D0D7DED2884D6DE00CE02C4 /* ZenApp_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7DEB2884D6DE00CE02C4 /* ZenApp_1.xcdatamodeld */; };
+		8D0D7DF72884D6DE00CE02C4 /* ZenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7DF62884D6DE00CE02C4 /* ZenAppTests.swift */; };
+		8D0D7E012884D6DE00CE02C4 /* ZenAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7E002884D6DE00CE02C4 /* ZenAppUITests.swift */; };
+		8D0D7E032884D6DE00CE02C4 /* ZenAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7E022884D6DE00CE02C4 /* ZenAppUITestsLaunchTests.swift */; };
+		8D0D7E152884EA5000CE02C4 /* CommentRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7E142884EA5000CE02C4 /* CommentRemoteRepository.swift */; };
+		8D0D7E172885A18000CE02C4 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D7E162885A18000CE02C4 /* Comment.swift */; };
+		8D57466628870DA0001F22B7 /* PostRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57466528870DA0001F22B7 /* PostRemoteRepository.swift */; };
+		8D57466828871281001F22B7 /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57466728871281001F22B7 /* RemoteRepository.swift */; };
+		8D575D732886106C007EDBC4 /* ZemoUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8D575D722886106C007EDBC4 /* ZemoUIKit */; };
+		8D575D7628861087007EDBC4 /* ZeCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 8D575D7528861087007EDBC4 /* ZeCombine */; };
+		8D6FD4C42885C95E00C41AAE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FD4C32885C95E00C41AAE /* Post.swift */; };
+		8D6FD4C72885CA4F00C41AAE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FD4C62885CA4F00C41AAE /* User.swift */; };
+		8D6FD4C92885DD9200C41AAE /* PostLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FD4C82885DD9200C41AAE /* PostLocalRepository.swift */; };
+		8D6FD4CC2885E4C500C41AAE /* CacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FD4CB2885E4C500C41AAE /* CacheStore.swift */; };
+		8D6FD4CE2885F13B00C41AAE /* JSONPlaceHolderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FD4CD2885F13B00C41AAE /* JSONPlaceHolderAPI.swift */; };
+		8D82BD3B2887197100955604 /* PostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82BD3A2887197100955604 /* PostInteractor.swift */; };
+		8D82BD3E28871E5E00955604 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82BD3D28871E5E00955604 /* AppState.swift */; };
+		8D82BD4028871E7800955604 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82BD3F28871E7800955604 /* DependencyInjector.swift */; };
+		8D82BD422887220D00955604 /* ViewInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82BD412887220D00955604 /* ViewInjector.swift */; };
+		8D82BD442887222300955604 /* InteractorInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82BD432887222300955604 /* InteractorInjector.swift */; };
+		8D82BD482887255100955604 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82BD472887255100955604 /* PostsListView.swift */; };
+		8D82BD4A2887322B00955604 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82BD492887322B00955604 /* PostDetailView.swift */; };
+		8D82BD4F288756AA00955604 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D82BD4E288756AA00955604 /* ActivityIndicatorView.swift */; };
+		8DC124A8289196A500C76E06 /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC124A7289196A500C76E06 /* PostDetail.swift */; };
+		8DC124AA289199AC00C76E06 /* PostDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC124A9289199AC00C76E06 /* PostDetailInteractor.swift */; };
+		8DC124AF28919E3700C76E06 /* UserRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC124AE28919E3700C76E06 /* UserRemoteRepository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D0D7DF32884D6DE00CE02C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D0D7DD52884D6DC00CE02C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D0D7DDC2884D6DC00CE02C4;
+			remoteInfo = ZenApp;
+		};
+		8D0D7DFD2884D6DE00CE02C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D0D7DD52884D6DC00CE02C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D0D7DDC2884D6DC00CE02C4;
+			remoteInfo = ZenApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D090A65288C7A9F00C2B94E /* RootViewAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewAppearance.swift; sourceTree = "<group>"; };
+		8D090A68288C7CB800C2B94E /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		8D090A6A288C7CFD00C2B94E /* SystemsEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemsEventHandler.swift; sourceTree = "<group>"; };
+		8D0D7DDD2884D6DC00CE02C4 /* ZenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0D7DE02884D6DC00CE02C4 /* ZenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenApp.swift; sourceTree = "<group>"; };
+		8D0D7DE22884D6DC00CE02C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8D0D7DE42884D6DE00CE02C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D0D7DE72884D6DE00CE02C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D0D7DEC2884D6DE00CE02C4 /* ZenApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZenApp.xcdatamodel; sourceTree = "<group>"; };
+		8D0D7DF22884D6DE00CE02C4 /* ZenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0D7DF62884D6DE00CE02C4 /* ZenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenAppTests.swift; sourceTree = "<group>"; };
+		8D0D7DFC2884D6DE00CE02C4 /* ZenAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0D7E002884D6DE00CE02C4 /* ZenAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenAppUITests.swift; sourceTree = "<group>"; };
+		8D0D7E022884D6DE00CE02C4 /* ZenAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8D0D7E142884EA5000CE02C4 /* CommentRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRemoteRepository.swift; sourceTree = "<group>"; };
+		8D0D7E162885A18000CE02C4 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		8D57466528870DA0001F22B7 /* PostRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteRepository.swift; sourceTree = "<group>"; };
+		8D57466728871281001F22B7 /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
+		8D6FD4C32885C95E00C41AAE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8D6FD4C62885CA4F00C41AAE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8D6FD4C82885DD9200C41AAE /* PostLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocalRepository.swift; sourceTree = "<group>"; };
+		8D6FD4CB2885E4C500C41AAE /* CacheStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheStore.swift; sourceTree = "<group>"; };
+		8D6FD4CD2885F13B00C41AAE /* JSONPlaceHolderAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceHolderAPI.swift; sourceTree = "<group>"; };
+		8D82BD3A2887197100955604 /* PostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInteractor.swift; sourceTree = "<group>"; };
+		8D82BD3D28871E5E00955604 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		8D82BD3F28871E7800955604 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		8D82BD412887220D00955604 /* ViewInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInjector.swift; sourceTree = "<group>"; };
+		8D82BD432887222300955604 /* InteractorInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInjector.swift; sourceTree = "<group>"; };
+		8D82BD472887255100955604 /* PostsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
+		8D82BD492887322B00955604 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		8D82BD4E288756AA00955604 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		8DC124A7289196A500C76E06 /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
+		8DC124A9289199AC00C76E06 /* PostDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailInteractor.swift; sourceTree = "<group>"; };
+		8DC124AE28919E3700C76E06 /* UserRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteRepository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0D7DDA2884D6DC00CE02C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D575D732886106C007EDBC4 /* ZemoUIKit in Frameworks */,
+				8D575D7628861087007EDBC4 /* ZeCombine in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0D7DEF2884D6DE00CE02C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0D7DF92884D6DE00CE02C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D090A64288C7A7B00C2B94E /* ZenAppearance */ = {
+			isa = PBXGroup;
+			children = (
+				8D090A65288C7A9F00C2B94E /* RootViewAppearance.swift */,
+			);
+			path = ZenAppearance;
+			sourceTree = "<group>";
+		};
+		8D090A67288C7C8E00C2B94E /* System */ = {
+			isa = PBXGroup;
+			children = (
+				8D090A68288C7CB800C2B94E /* AppEnvironment.swift */,
+				8D0D7DE02884D6DC00CE02C4 /* ZenApp.swift */,
+				8D090A6A288C7CFD00C2B94E /* SystemsEventHandler.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		8D090A6E288CA2C600C2B94E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D0D7DE42884D6DE00CE02C4 /* Assets.xcassets */,
+				8D0D7DEB2884D6DE00CE02C4 /* ZenApp_1.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8D0D7DD42884D6DC00CE02C4 = {
+			isa = PBXGroup;
+			children = (
+				8D0D7DDF2884D6DC00CE02C4 /* ZenApp */,
+				8D0D7DF52884D6DE00CE02C4 /* ZenAppTests */,
+				8D0D7DFF2884D6DE00CE02C4 /* ZenAppUITests */,
+				8D0D7DDE2884D6DC00CE02C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D0D7DDE2884D6DC00CE02C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0D7DDD2884D6DC00CE02C4 /* ZenApp.app */,
+				8D0D7DF22884D6DE00CE02C4 /* ZenAppTests.xctest */,
+				8D0D7DFC2884D6DE00CE02C4 /* ZenAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D0D7DDF2884D6DC00CE02C4 /* ZenApp */ = {
+			isa = PBXGroup;
+			children = (
+				8D090A6E288CA2C600C2B94E /* Resources */,
+				8D82BD452887251200955604 /* UI */,
+				8D575D77288611B9007EDBC4 /* Core */,
+				8DC124A62891969200C76E06 /* PostDetail */,
+				8D0D7E122884DB2400CE02C4 /* Posts */,
+				8D0D7DE62884D6DE00CE02C4 /* Preview Content */,
+			);
+			path = ZenApp;
+			sourceTree = "<group>";
+		};
+		8D0D7DE62884D6DE00CE02C4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8D0D7DE72884D6DE00CE02C4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D0D7DF52884D6DE00CE02C4 /* ZenAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D0D7DF62884D6DE00CE02C4 /* ZenAppTests.swift */,
+			);
+			path = ZenAppTests;
+			sourceTree = "<group>";
+		};
+		8D0D7DFF2884D6DE00CE02C4 /* ZenAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D0D7E002884D6DE00CE02C4 /* ZenAppUITests.swift */,
+				8D0D7E022884D6DE00CE02C4 /* ZenAppUITestsLaunchTests.swift */,
+			);
+			path = ZenAppUITests;
+			sourceTree = "<group>";
+		};
+		8D0D7E122884DB2400CE02C4 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				8D82BD472887255100955604 /* PostsListView.swift */,
+				8D6FD4C32885C95E00C41AAE /* Post.swift */,
+				8D6FD4C82885DD9200C41AAE /* PostLocalRepository.swift */,
+				8D57466528870DA0001F22B7 /* PostRemoteRepository.swift */,
+				8D82BD3A2887197100955604 /* PostInteractor.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		8D0D7E132884DB2D00CE02C4 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				8D82BD492887322B00955604 /* PostDetailView.swift */,
+				8D0D7E142884EA5000CE02C4 /* CommentRemoteRepository.swift */,
+				8D0D7E162885A18000CE02C4 /* Comment.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		8D575D77288611B9007EDBC4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8D090A67288C7C8E00C2B94E /* System */,
+				8D82BD3C28871E4A00955604 /* Injection */,
+				8D6FD4CA2885E44A00C41AAE /* Repositories */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8D6FD4CA2885E44A00C41AAE /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8D6FD4CB2885E4C500C41AAE /* CacheStore.swift */,
+				8D6FD4CD2885F13B00C41AAE /* JSONPlaceHolderAPI.swift */,
+				8D57466728871281001F22B7 /* RemoteRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8D82BD3C28871E4A00955604 /* Injection */ = {
+			isa = PBXGroup;
+			children = (
+				8D82BD3D28871E5E00955604 /* AppState.swift */,
+				8D82BD3F28871E7800955604 /* DependencyInjector.swift */,
+				8D82BD412887220D00955604 /* ViewInjector.swift */,
+				8D82BD432887222300955604 /* InteractorInjector.swift */,
+			);
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		8D82BD452887251200955604 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D090A64288C7A7B00C2B94E /* ZenAppearance */,
+				8D82BD4B28874A8E00955604 /* Components */,
+				8D82BD462887251A00955604 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8D82BD462887251A00955604 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D0D7DE22884D6DC00CE02C4 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D82BD4B28874A8E00955604 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8D82BD4E288756AA00955604 /* ActivityIndicatorView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8DC124A62891969200C76E06 /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8DC124AB28919E2000C76E06 /* User */,
+				8D0D7E132884DB2D00CE02C4 /* Comments */,
+				8DC124A7289196A500C76E06 /* PostDetail.swift */,
+				8DC124A9289199AC00C76E06 /* PostDetailInteractor.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		8DC124AB28919E2000C76E06 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8D6FD4C62885CA4F00C41AAE /* User.swift */,
+				8DC124AE28919E3700C76E06 /* UserRemoteRepository.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0D7DDC2884D6DC00CE02C4 /* ZenApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D0D7E062884D6DE00CE02C4 /* Build configuration list for PBXNativeTarget "ZenApp" */;
+			buildPhases = (
+				8D0D7DD92884D6DC00CE02C4 /* Sources */,
+				8D0D7DDA2884D6DC00CE02C4 /* Frameworks */,
+				8D0D7DDB2884D6DC00CE02C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZenApp;
+			packageProductDependencies = (
+				8D575D722886106C007EDBC4 /* ZemoUIKit */,
+				8D575D7528861087007EDBC4 /* ZeCombine */,
+			);
+			productName = ZenApp;
+			productReference = 8D0D7DDD2884D6DC00CE02C4 /* ZenApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D0D7DF12884D6DE00CE02C4 /* ZenAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D0D7E092884D6DE00CE02C4 /* Build configuration list for PBXNativeTarget "ZenAppTests" */;
+			buildPhases = (
+				8D0D7DEE2884D6DE00CE02C4 /* Sources */,
+				8D0D7DEF2884D6DE00CE02C4 /* Frameworks */,
+				8D0D7DF02884D6DE00CE02C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D0D7DF42884D6DE00CE02C4 /* PBXTargetDependency */,
+			);
+			name = ZenAppTests;
+			productName = ZenAppTests;
+			productReference = 8D0D7DF22884D6DE00CE02C4 /* ZenAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D0D7DFB2884D6DE00CE02C4 /* ZenAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D0D7E0C2884D6DE00CE02C4 /* Build configuration list for PBXNativeTarget "ZenAppUITests" */;
+			buildPhases = (
+				8D0D7DF82884D6DE00CE02C4 /* Sources */,
+				8D0D7DF92884D6DE00CE02C4 /* Frameworks */,
+				8D0D7DFA2884D6DE00CE02C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D0D7DFE2884D6DE00CE02C4 /* PBXTargetDependency */,
+			);
+			name = ZenAppUITests;
+			productName = ZenAppUITests;
+			productReference = 8D0D7DFC2884D6DE00CE02C4 /* ZenAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D0D7DD52884D6DC00CE02C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					8D0D7DDC2884D6DC00CE02C4 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					8D0D7DF12884D6DE00CE02C4 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 8D0D7DDC2884D6DC00CE02C4;
+					};
+					8D0D7DFB2884D6DE00CE02C4 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 8D0D7DDC2884D6DC00CE02C4;
+					};
+				};
+			};
+			buildConfigurationList = 8D0D7DD82884D6DC00CE02C4 /* Build configuration list for PBXProject "ZenApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D0D7DD42884D6DC00CE02C4;
+			packageReferences = (
+				8D575D712886106C007EDBC4 /* XCRemoteSwiftPackageReference "ZeUI" */,
+				8D575D7428861087007EDBC4 /* XCRemoteSwiftPackageReference "ZeCombine" */,
+			);
+			productRefGroup = 8D0D7DDE2884D6DC00CE02C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D0D7DDC2884D6DC00CE02C4 /* ZenApp */,
+				8D0D7DF12884D6DE00CE02C4 /* ZenAppTests */,
+				8D0D7DFB2884D6DE00CE02C4 /* ZenAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0D7DDB2884D6DC00CE02C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0D7DE82884D6DE00CE02C4 /* Preview Assets.xcassets in Resources */,
+				8D0D7DE52884D6DE00CE02C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0D7DF02884D6DE00CE02C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0D7DFA2884D6DE00CE02C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0D7DD92884D6DC00CE02C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D82BD4028871E7800955604 /* DependencyInjector.swift in Sources */,
+				8D82BD482887255100955604 /* PostsListView.swift in Sources */,
+				8D090A69288C7CB800C2B94E /* AppEnvironment.swift in Sources */,
+				8D090A6B288C7CFD00C2B94E /* SystemsEventHandler.swift in Sources */,
+				8DC124A8289196A500C76E06 /* PostDetail.swift in Sources */,
+				8D57466628870DA0001F22B7 /* PostRemoteRepository.swift in Sources */,
+				8D0D7E172885A18000CE02C4 /* Comment.swift in Sources */,
+				8DC124AF28919E3700C76E06 /* UserRemoteRepository.swift in Sources */,
+				8DC124AA289199AC00C76E06 /* PostDetailInteractor.swift in Sources */,
+				8D82BD442887222300955604 /* InteractorInjector.swift in Sources */,
+				8D82BD4F288756AA00955604 /* ActivityIndicatorView.swift in Sources */,
+				8D0D7DED2884D6DE00CE02C4 /* ZenApp_1.xcdatamodeld in Sources */,
+				8D6FD4CE2885F13B00C41AAE /* JSONPlaceHolderAPI.swift in Sources */,
+				8D0D7E152884EA5000CE02C4 /* CommentRemoteRepository.swift in Sources */,
+				8D090A66288C7A9F00C2B94E /* RootViewAppearance.swift in Sources */,
+				8D82BD3E28871E5E00955604 /* AppState.swift in Sources */,
+				8D57466828871281001F22B7 /* RemoteRepository.swift in Sources */,
+				8D82BD4A2887322B00955604 /* PostDetailView.swift in Sources */,
+				8D82BD422887220D00955604 /* ViewInjector.swift in Sources */,
+				8D6FD4C72885CA4F00C41AAE /* User.swift in Sources */,
+				8D82BD3B2887197100955604 /* PostInteractor.swift in Sources */,
+				8D0D7DE32884D6DC00CE02C4 /* ContentView.swift in Sources */,
+				8D6FD4C92885DD9200C41AAE /* PostLocalRepository.swift in Sources */,
+				8D6FD4C42885C95E00C41AAE /* Post.swift in Sources */,
+				8D6FD4CC2885E4C500C41AAE /* CacheStore.swift in Sources */,
+				8D0D7DE12884D6DC00CE02C4 /* ZenApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0D7DEE2884D6DE00CE02C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0D7DF72884D6DE00CE02C4 /* ZenAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D0D7DF82884D6DE00CE02C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0D7E032884D6DE00CE02C4 /* ZenAppUITestsLaunchTests.swift in Sources */,
+				8D0D7E012884D6DE00CE02C4 /* ZenAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D0D7DF42884D6DE00CE02C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D0D7DDC2884D6DC00CE02C4 /* ZenApp */;
+			targetProxy = 8D0D7DF32884D6DE00CE02C4 /* PBXContainerItemProxy */;
+		};
+		8D0D7DFE2884D6DE00CE02C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D0D7DDC2884D6DC00CE02C4 /* ZenApp */;
+			targetProxy = 8D0D7DFD2884D6DE00CE02C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8D0D7E042884D6DE00CE02C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D0D7E052884D6DE00CE02C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D0D7E072884D6DE00CE02C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZenApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = openprojects.ZenApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8D0D7E082884D6DE00CE02C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZenApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = openprojects.ZenApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8D0D7E0A2884D6DE00CE02C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = openprojects.ZenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZenApp";
+			};
+			name = Debug;
+		};
+		8D0D7E0B2884D6DE00CE02C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = openprojects.ZenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZenApp";
+			};
+			name = Release;
+		};
+		8D0D7E0D2884D6DE00CE02C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = openprojects.ZenAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZenApp;
+			};
+			name = Debug;
+		};
+		8D0D7E0E2884D6DE00CE02C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = openprojects.ZenAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZenApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D0D7DD82884D6DC00CE02C4 /* Build configuration list for PBXProject "ZenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0D7E042884D6DE00CE02C4 /* Debug */,
+				8D0D7E052884D6DE00CE02C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D0D7E062884D6DE00CE02C4 /* Build configuration list for PBXNativeTarget "ZenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0D7E072884D6DE00CE02C4 /* Debug */,
+				8D0D7E082884D6DE00CE02C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D0D7E092884D6DE00CE02C4 /* Build configuration list for PBXNativeTarget "ZenAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0D7E0A2884D6DE00CE02C4 /* Debug */,
+				8D0D7E0B2884D6DE00CE02C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D0D7E0C2884D6DE00CE02C4 /* Build configuration list for PBXNativeTarget "ZenAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D0D7E0D2884D6DE00CE02C4 /* Debug */,
+				8D0D7E0E2884D6DE00CE02C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D575D712886106C007EDBC4 /* XCRemoteSwiftPackageReference "ZeUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/guillodacosta/ZeUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8D575D7428861087007EDBC4 /* XCRemoteSwiftPackageReference "ZeCombine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/guillodacosta/ZeCombine.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D575D722886106C007EDBC4 /* ZemoUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D575D712886106C007EDBC4 /* XCRemoteSwiftPackageReference "ZeUI" */;
+			productName = ZemoUIKit;
+		};
+		8D575D7528861087007EDBC4 /* ZeCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D575D7428861087007EDBC4 /* XCRemoteSwiftPackageReference "ZeCombine" */;
+			productName = ZeCombine;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		8D0D7DEB2884D6DE00CE02C4 /* ZenApp_1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8D0D7DEC2884D6DE00CE02C4 /* ZenApp.xcdatamodel */,
+			);
+			currentVersion = 8D0D7DEC2884D6DE00CE02C4 /* ZenApp.xcdatamodel */;
+			path = ZenApp_1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8D0D7DD52884D6DC00CE02C4 /* Project object */;
+}

@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "zecombine",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/guillodacosta/ZeCombine.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "7bbba7c22460d8e6417d5b298396973aa7c7754d"
+      }
+    },
+    {
+      "identity" : "zeui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/guillodacosta/ZeUI.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6adee3c57d689ee2fe3579580cea7db85ef89581"
+      }
+    }
+  ],
+  "version" : 2
+}
